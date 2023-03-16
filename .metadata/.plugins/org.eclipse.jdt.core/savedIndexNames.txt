@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\Artur\Artur\Trabalhos\IFMA\8º Período\Padrões de projeto\Atividade_1\.metadata\.plugins\org.eclipse.jdt.core
+512146163.index
+2151125109.index
+1865797976.index
