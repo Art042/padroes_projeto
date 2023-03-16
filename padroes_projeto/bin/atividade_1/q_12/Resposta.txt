@@ -1,0 +1,4 @@
+No problema em questão são herdados métodos que não são aplicados, gerando um alto grau de acoplamento
+desnecessário para o código.
+Fazendo uso da Composição há a implementação de funcionalidades da classe Deposito, por exemplo, 
+sem a dependência dos métodos de Movimentação como encargos.
