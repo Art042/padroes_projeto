@@ -1,0 +1,44 @@
+package atividade_2.q_2;
+
+import java.util.Scanner;
+
+public class ImageManager {
+	public static void main(String[] args) {
+
+//	Rendered rendered = new Rendered();
+
+		Renderer renderer = new Renderer();
+		int escolha;
+        System.out.println("Voce Deseja?\n1 - Pagar Chefe\n2 - Pagar Funcionario\n3 - Pagar Estagiario\n");
+        Scanner scanner = new Scanner(System.in);
+        escolha = scanner.nextInt();
+        
+        if (escolha == 1){
+			renderer.setStrategy(new TVRenderer());
+        }else if(escolha == 2){
+			renderer.setStrategy(new LaptopRenderer());
+        }else if(escolha == 3){
+			renderer.setStrategy(new SmartphoneRenderer());
+		}else {
+			return;
+		}
+		renderer.executaStrategy();
+		
+	}
+
+}
+/* 
+public void show() { 
+if(renderer instanceof TVRenderer) { 
+TVRenderer tvRenderer = (TVRenderer) renderer; 
+tvRenderer.showImage();
+} else if(renderer instanceof LaptopRenderer) { 
+LaptopRenderer tvRenderer = (LaptopRenderer) renderer; 
+tvRenderer.showImage(); 
+} else if(renderer instanceof SmartphoneRenderer) { 
+SmartphoneRenderer tvRenderer = (SmartphoneRenderer) renderer; 
+tvRenderer.showImage(); 
+} 
+} 
+ * */
+ 
