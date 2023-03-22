@@ -1,0 +1,15 @@
+package atividade_2.q_2;
+
+public class LaptopRenderer implements ImageManagerStrategy{
+	private static final ImageManagerStrategy LaptopRenderer = null;
+	Renderer renderer = new Renderer();
+	
+	public void mostrarImagem() { 
+		
+		if(LaptopRenderer instanceof ImageManagerStrategy) {
+			System.out.println("Mostrando uma imagem no laptop..." ); 
+		}else {
+			System.out.println("Não");
+		}
+	}
+}

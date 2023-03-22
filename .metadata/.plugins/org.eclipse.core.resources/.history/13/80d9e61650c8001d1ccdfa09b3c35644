@@ -1,0 +1,16 @@
+package atividade_2.q_4;
+
+public class DescontoContexto {
+
+
+    private Desconto desconto;
+
+    public void setDesconto(Desconto desconto) {
+        this.desconto = desconto;
+    }
+
+    public double executa(){
+        return this.desconto.getDesconto();
+    }
+
+}

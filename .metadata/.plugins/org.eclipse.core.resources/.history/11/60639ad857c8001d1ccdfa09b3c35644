@@ -1,0 +1,10 @@
+package atividade_2.q_5;
+
+public class Contagem_Notas {
+	public static void main(String[] args) {
+		CaixaEletronico caixaEletronico = new CaixaEletronico();
+        System.out.println(caixaEletronico.contaMinimoNotas(475));
+		
+	}
+
+}

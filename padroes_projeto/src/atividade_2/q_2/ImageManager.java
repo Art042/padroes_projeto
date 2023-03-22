@@ -1,28 +1,25 @@
 package atividade_2.q_2;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
-@SuppressWarnings("resource")
 public class ImageManager {
 	public static void main(String[] args) {
 
-//	Rendered rendered = new Rendered();
 
 		Renderer renderer = new Renderer();
-		int escolha;
-        System.out.println("\n1 - TV\n2 - Laptop\n3 - Smartphone\n");
-        Scanner scanner = new Scanner(System.in);
-        escolha = scanner.nextInt();
         
-        if (escolha == 1){
+		if(renderer instanceof Renderer) {
 			renderer.setStrategy(new TVRenderer());
-        }else if(escolha == 2){
+		}
+		else if(renderer instanceof Renderer) {
 			renderer.setStrategy(new LaptopRenderer());
-        }else if(escolha == 3){
+		}
+		else if(renderer instanceof Renderer) {
 			renderer.setStrategy(new SmartphoneRenderer());
 		}else {
 			return;
 		}
+
 		renderer.executaStrategy();
 		
 	}

@@ -1,0 +1,14 @@
+package atividade_2.q_4;
+
+public class Promocoes {
+	private double desconto;
+
+    public Promocoes(double desconto){
+        this.desconto = desconto;
+    }
+
+    @Override
+    public double getDescontos() {
+        return this.desconto;
+    }
+}

@@ -1,0 +1,37 @@
+package atividade_2.q_2;
+
+//import java.util.Scanner;
+
+//@SuppressWarnings("resource")
+public class ImageManager {
+	public static void main(String[] args) {
+
+//	Rendered rendered = new Rendered();
+
+		Renderer renderer = new Renderer();
+//		int escolha;
+//        System.out.println("\n1 - TV\n2 - Laptop\n3 - Smartphone\n");
+//        Scanner scanner = new Scanner(System.in);
+//        escolha = scanner.nextInt();
+        
+		if(renderer instanceof ImageManagerStrategy) {
+        	return;
+		}else {
+			renderer.setStrategy(new TVRenderer());
+			try {
+				renderer.wait(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			renderer.setStrategy(new LaptopRenderer());
+        	renderer.setStrategy(new SmartphoneRenderer());
+		}
+		renderer.executaStrategy();
+		
+	}
+
+
+}
+
+ 

@@ -1,0 +1,19 @@
+package atividade_2.q_4;
+
+public class Calculadora {
+
+    private DescontoContexto descontocontexto;
+
+    //Preço Normal
+    public double calcular(double Valor_Original){
+        return Valor_Original - (Valor_Original * descontocontexto.executa());
+    }
+
+    //Promoções Especiais
+    public double calcular(double Valor_Original,double descontoEspecial){
+    	descontocontexto.setDesconto(new Promocoes(descontoEspecial)); 
+        //apenas salva o desconto, colocando contexto como evento e executa normalmente
+        return calcular(Valor_Original);
+    }
+
+}

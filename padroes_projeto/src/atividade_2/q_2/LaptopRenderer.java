@@ -1,7 +1,12 @@
 package atividade_2.q_2;
 
 public class LaptopRenderer implements ImageManagerStrategy{
-	public void mostrarImagem() { 
-		System.out.println("Mostrando uma imagem no laptop..." ); 
-		} 
+	Renderer renderer = new Renderer();
+	
+	public boolean mostrarImagem() { 
+
+			System.out.println("Mostrando uma imagem no laptop..." );
+			
+		return true; 
+	}
 }

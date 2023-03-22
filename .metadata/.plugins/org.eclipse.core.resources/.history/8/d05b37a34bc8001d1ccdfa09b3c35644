@@ -1,0 +1,39 @@
+package atividade_2.q_2;
+
+
+public class Renderer {
+	
+    private ImageManagerStrategy strategy;
+
+    public void setStrategy(ImageManagerStrategy strategy) {
+        this.strategy = strategy;
+        TVRenderer tvRenderer;
+        LaptopRenderer laptopRenderer;
+        SmartphoneRenderer smartphoneRenderer;
+    }
+
+    public void executaStrategy(){
+        strategy.mostrarImagem();
+    }
+
+	public void setStrategy(TVRenderer tvRenderer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setStrategy(LaptopRenderer laptopRenderer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setStrategy(SmartphoneRenderer smartphoneRenderer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setStrategy(TVRenderer tvRenderer, LaptopRenderer laptopRenderer,
+			SmartphoneRenderer smartphoneRenderer) {
+		// TODO Auto-generated method stub
+		
+	} 
+}

@@ -7,10 +7,12 @@ public class Renderer {
 
     public void setStrategy(ImageManagerStrategy strategy) {
         this.strategy = strategy;
+        
     }
 
     public void executaStrategy(){
         strategy.mostrarImagem();
     }
 
+	
 }

@@ -1,0 +1,20 @@
+package atividade_2.q_2;
+
+
+public class Renderer {
+	
+    private ImageManagerStrategy strategy;
+
+    public void setStrategy(ImageManagerStrategy strategy, LaptopRenderer laptopRenderer, TVRenderer tvRenderer) {
+        this.strategy = strategy;
+    }
+
+    public void executaStrategy(){
+        strategy.mostrarImagem();
+    }
+
+	public void setStrategy(TVRenderer tvRenderer) {
+		// TODO Auto-generated method stub
+		
+	} 
+}
