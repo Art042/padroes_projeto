@@ -1,0 +1,33 @@
+package atividade_3.q_3.states;
+
+import atividade_3.q_3.Processo;
+
+public class ProcessoAberto extends Status{
+
+    public ProcessoAberto(Processo processo) {
+        super(processo);
+    }
+
+    @Override
+    public String getStatus() {
+        return "O processoa Ainda se encontra em Avaliação";
+    }
+
+	@Override
+	public void aberto() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void cancelar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void acao() {
+		// TODO Auto-generated method stub
+		
+	}
+}

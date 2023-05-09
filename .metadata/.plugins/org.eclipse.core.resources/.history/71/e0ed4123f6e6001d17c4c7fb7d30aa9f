@@ -1,0 +1,28 @@
+public class Client {
+    public static void main(String[] args) {
+        Director director = new Director();
+        ContatoInternet builderInternet = new ContatoInternet();
+        BuilderContatoTelefone builderTelefone = new BuilderContatoTelefone();
+        BuilderContatoCompleto builderCompleto = new BuilderContatoCompleto();
+
+        String nome = "Fulano";
+        String endereco = "Rua X";
+        String telefone = "123456789";
+        String email = "fulano@example.com";
+
+        // Criando contato de internet
+        director.construct(builderInternet, nome, endereco, telefone, email);
+        ContatoInternet contatoInternet = builderInternet.getContatoInternet();
+        System.out.println(contatoInternet.toString());
+
+        // Criando contato de telefone
+        director.construct(builderTelefone, nome, endereco, telefone, email);
+        ContatoTelefone contatoTelefone = builderTelefone.getContatoTelefone();
+        System.out.println(contatoTelefone.toString());
+
+        // Criando contato completo
+        director.construct(builderCompleto, nome, endereco, telefone, email);
+        ContatoCompleto contatoCompleto = builderCompleto.getContatoCompleto();
+        System.out.println(contatoCompleto.toString());
+    }
+}

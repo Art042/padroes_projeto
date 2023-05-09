@@ -1,0 +1,25 @@
+package atividade_3.q_1;
+
+public class Client {
+    public static void main(String[] args) {
+        // cria um director e um builder para cada tipo de contato
+        Director directorInternet = new Director(new ContatoInternetBuilder());
+        Director directorTelefone = new Director(new ContatoTelefoneBuilder());
+        Director directorCompleto = new Director(new ContatoCompletoBuilder());
+        
+        // cria um contato de cada tipo usando o director correspondente
+        directorInternet.criarContato("Fulano", "fulano@email");
+        ContatoInternet contatoInternet = (ContatoInternet) directorInternet.getContato();
+        
+        directorTelefone.criarContato("Ciclano", "12345678");
+        ContatoTelefone contatoTelefone = (ContatoTelefone) directorTelefone.getContato();
+        
+        directorCompleto.criarContato("Beltrano", "Rua A, 123", "98765432", "beltrano@email");
+        ContatoCompleto contatoCompleto = (ContatoCompleto) directorCompleto.getContato();
+        
+        // imprime as informações de cada contato
+        System.out.println(contatoInternet.toString());
+        System.out.println(contatoTelefone.toString());
+        System.out.println(contatoCompleto.toString());
+    }
+}

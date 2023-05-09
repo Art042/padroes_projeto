@@ -1,0 +1,14 @@
+package atividade_3.q_1;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class BuilderContatoTelefoneTest {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,30 @@
+package atividade_3.q_3.states;
+
+import atividade_3.q_3.Processo;
+
+public class Processando extends Status{
+
+    public Processando(Processo processo) {
+        super(processo);
+    }
+
+    @Override
+    public String getStatus() {
+        return "Avaliando Processo . . .";
+    }
+
+    @Override
+    public void acao() {
+        processo.changeStatus(new Processando(processo));
+    }
+
+    @Override
+    public void cancelar() {
+    	processo.changeStatus(new Indeferido(processo));
+    }
+
+    @Override
+    public void deferido() {
+    	processo.changeStatus(new Deferido(processo));
+    }
+}

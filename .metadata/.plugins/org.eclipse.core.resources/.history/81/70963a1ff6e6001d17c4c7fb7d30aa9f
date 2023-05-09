@@ -1,0 +1,9 @@
+public interface Builder {
+    void setNome(String nome);
+    void setEndereco(String endereco);
+    void setTelefone(String telefone);
+    void setEmail(String email);
+    ContatoInternet getContatoInternet();
+    ContatoTelefone getContatoTelefone();
+    ContatoCompleto getContatoCompleto();
+}

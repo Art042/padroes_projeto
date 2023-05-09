@@ -1,0 +1,25 @@
+package atividade_3.q_10;
+
+import atividade_3.q_10.model.Pizza;
+import atividade_3.q_10.model.Mozzarella;
+import atividade_3.q_10.model.Pepperoni;
+import atividade_3.q_10.model.decorators.*;
+
+public class Pizzaiolo {
+	
+	public static void order(String name, Pizza pizza) {
+		System.out.println("Ordering a " + name);
+		pizza.serve();
+		System.out.println(pizza.getPrice());
+		System.out.println("---------------");
+	}
+
+	public static void main(String[] args) {
+		order("Expresso", new Mozzarella());
+		order("Tea", new Pepperoni());
+		order("Lungo", new DoubleDrink(new Mozzarella()));
+		order("Lungo", new Bacon(new DoubleDrink(new Mozzarella())) );
+		order("Cafe Au Lait", new Bacon(new Mozzarella()));
+		order("English Tea", new DoubleDrink(new Bacon(new Pepperoni())) );
+	}
+}

@@ -1,0 +1,29 @@
+package atividade_3.q_7;
+
+public class BingoPlayer implements Observer {
+    private String name;
+    private BingoCard card;
+    private BingoGame game;
+    
+    public BingoPlayer(String name, BingoGame game) {
+        this.name = name;
+        card = new BingoCard();
+        this.game = game;
+    }
+    
+    public void update(int number) {
+        card.markNumber(number);
+        if (card.isComplete()) {
+            System.out.println("BINGO! " + name + " ganhou!");
+            game.setWinner(this);
+        }
+    }
+    
+    public BingoCard getCard() {
+        return card;
+    }
+    
+    public String getName() {
+        return name;
+    }
+}

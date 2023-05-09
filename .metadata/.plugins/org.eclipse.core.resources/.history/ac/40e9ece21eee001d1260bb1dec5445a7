@@ -1,0 +1,16 @@
+package atividade_3.q_7;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BingoCaller {
+    private List<Integer> numbers = new ArrayList<Integer>();
+
+    public BingoCaller() {
+        // Inicializa uma lista com os números possíveis
+        for (int i = 1; i <= 75; i++) {
+            numbers.add(i);
+        }
+
+    }
+ }

@@ -1,0 +1,9 @@
+package atividade_3.q_5;
+
+import atividade_3.q_5.CurrencyFormat;
+
+class BrasilMoeda implements CurrencyFormat {
+    public String format(double value) {
+        return String.format("R$ %.2f", value);
+    }
+}

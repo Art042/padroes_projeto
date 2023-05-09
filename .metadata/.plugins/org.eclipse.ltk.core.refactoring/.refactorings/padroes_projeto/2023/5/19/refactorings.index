@@ -1,0 +1,27 @@
+1683595594620	Rename type 'Milk'
+1683595659325	Rename type 'Drink'
+1683595775835	Delete element
+1683595820040	Rename type 'DrinkDecorator'
+1683595874930	Rename type 'Client'
+1683595892100	Rename type 'Expresso'
+1683595906777	Rename type 'Tea'
+1683596524711	Delete element
+1683598243504	Rename compilation unit 'Processado.java'
+1683598454618	Rename type 'Pedido'
+1683598674181	Rename type 'Enviado'
+1683598686106	Rename type 'Cancelado'
+1683600563801	Delete element
+1683602222984	Rename type 'DateFormat'
+1683602284062	Rename type 'BrazilCurrencyFormat'
+1683602307016	Rename type 'BrazilDateFormat'
+1683602333307	Rename type 'USACurrencyFormat'
+1683602345356	Rename type 'USADateFormat'
+1683602363723	Move compilation units
+1683602388326	Move compilation unit
+1683602449826	Move compilation unit
+1683602489918	Move compilation units
+1683602495680	Delete element
+1683602517876	Rename type 'CurrencyFormat'
+1683602539387	Rename type 'LocaleFactory'
+1683603805041	Delete elements
+1683604832055	Delete element

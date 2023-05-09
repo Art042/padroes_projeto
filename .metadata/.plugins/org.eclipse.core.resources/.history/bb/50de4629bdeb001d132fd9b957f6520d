@@ -1,0 +1,31 @@
+package atividade_3.q_7;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BingoGame {
+    private List<BingoPlayer> players;
+    private BingoCaller caller;
+    
+    public BingoGame() {
+        players = new ArrayList<>();
+        caller = new BingoCaller();
+    }
+    
+    public void addPlayer(BingoPlayer player) {
+        players.add(player);
+        caller.addObserver(player);
+    }
+    
+    public void start() {
+        while (true) {
+            caller.callNumber();
+            try {
+                Thread.sleep(1000); // Espera um segundo entre os sorteios
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+

@@ -1,0 +1,73 @@
+package atividade_3.q_2;
+
+import java.util.List;
+
+public class Livro {
+    private String nomeNacional;
+    private int ano;
+    private String endereco;
+    private String telefone;
+    private List<String> tradutores;
+
+    private Livro() {}
+
+    public static Builder builder() {
+        return new Builder();
+    }
+
+    public String getnomeNacional() {
+        return nomeNacional;
+    }
+
+    public int getano() {
+        return ano;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public List<String> getTradutores() {
+		return tradutores;
+	}
+
+	public void setTradutores(List<String> tradutores) {
+		this.tradutores = tradutores;
+	}
+
+	public static class Builder {
+        private Livro livro;
+
+        public Builder() {
+            livro = new Livro();
+        }
+
+        public Builder nomeNacional(String nomeNacional) {
+            livro.nomeNacional = nomeNacional;
+            return this;
+        }
+
+        public Builder ano(int ano) {
+            livro.ano = ano;
+            return this;
+        }
+
+        public Builder endereco(String endereco) {
+            livro.endereco = endereco;
+            return this;
+        }
+
+        public Builder telefone(String telefone) {
+        	livro.telefone = telefone;
+            return this;
+        }
+
+        public Livro build() {
+            return livro;
+        }
+    }
+}

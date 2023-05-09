@@ -1,6 +1,0 @@
-package atividade_1.q_11;
-
-public interface RealizadorDeInvestimento {
-	public double investir(double valor);
-
-}

@@ -1,0 +1,38 @@
+package atividade_3.q_7;
+
+import java.util.*;
+
+public class BingoPlayer implements Observer {
+    private String name;
+    private BingoCard card;
+
+    public BingoPlayer(String name, BingoGame game) {
+        this(name, game, 5);
+    }
+
+    public BingoPlayer(String name, BingoGame game, int numColumns) {
+        this.name = name;
+        this.card = new BingoCard(numColumns);
+        game.addObserver(this);
+    }
+
+    public void update(Observable obs, Object arg) {
+        if (obs instanceof BingoGame) {
+            BingoGame game = (BingoGame) obs;
+            int calledNumber = (Integer) arg;
+            boolean hasNumber = card.markNumber(calledNumber);
+            System.out.println(name + " marcou o número " + calledNumber);
+            if (hasNumber && card.isBingo()) {
+                game.declareWinner(this);
+            }
+        }
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public BingoCard getCard() {
+        return card;
+    }
+}

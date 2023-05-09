@@ -1,0 +1,59 @@
+package atividade_3.q_2;
+
+public class Livro{
+	private String nome;
+    private int idade;
+    private String endereco;
+    private String telefone;
+
+    private Livro() {}
+
+    public static Builder builder() {
+        return new Builder();
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+    
+    private String nome;
+    private int idade;
+    private String endereco;
+    private String telefone;
+
+    private Pessoa() {}
+
+    public static Builder builder() {
+        return new Builder();
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+
+}

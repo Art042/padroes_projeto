@@ -1,0 +1,45 @@
+package atividade_3.q_1;
+
+public class Director {
+    private Builder builder;
+    private String nome;
+    private String endereco;
+    private String telefone;
+    private String email;
+    
+    public Director(Builder builder) {
+        this.builder = builder;
+    }
+    
+    public void criarContato(String nome, String endereco, String telefone, String email) {
+        this.nome = nome;
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.email = email;
+        builder.setNome(nome);
+        builder.setEndereco(endereco);
+        builder.setTelefone(telefone);
+        builder.setEmail(email);
+        builder.buildContato();
+    }
+    
+    public void criarContato(String nome, String telefone) {
+        this.nome = nome;
+        this.telefone = telefone;
+        builder.setNome(nome);
+        builder.setTelefone(telefone);
+        builder.buildContato();
+    }
+    
+    public void criarContato(String nome, String email) {
+        this.nome = nome;
+        this.email = email;
+        builder.setNome(nome);
+        builder.setEmail(email);
+        builder.buildContato();
+    }
+    
+    public Contato getContato() {
+        return builder.getContato();
+    }
+}

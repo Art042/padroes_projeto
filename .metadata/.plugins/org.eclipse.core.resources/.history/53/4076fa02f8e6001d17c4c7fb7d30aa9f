@@ -1,0 +1,27 @@
+package atividade_3.q_1;
+public class Director {
+    public void construct(BuilderContatoTelefone builderTelefone, String nome, String endereco, String telefone, String email) {
+        builderTelefone.setNome(nome);
+        builderTelefone.setEndereco(endereco);
+        builderTelefone.setTelefone(telefone);
+        builderTelefone.setEmail(email);
+    }
+
+	public void construct(ContatoInternet builderInternet, String nome, String endereco, String telefone,
+			String email) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void construct(BuilderContatoCompleto builderCompleto, String nome, String endereco, String telefone,
+			String email) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void construct1(ContatoInternet builderInternet, String nome, String endereco, String telefone,
+			String email) {
+		// TODO Auto-generated method stub
+		
+	}
+}

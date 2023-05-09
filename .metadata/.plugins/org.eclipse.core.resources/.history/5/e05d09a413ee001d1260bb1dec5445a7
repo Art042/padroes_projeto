@@ -1,0 +1,22 @@
+package atividade_3.q_3;
+
+public class AvaliadorDeProcesso {
+
+	public static void main(String[] args) {
+		Processo processo_1 = new Processo();
+		
+		processo_1.acao();
+		
+		System.out.println("Status do pedido de pizza: " + processo_1.getStatus());
+		
+		processo_1.cancelar();
+		
+		System.out.println("Status do pedido de pizza: " + processo_1.getStatus());
+		
+		processo_1.alterar();
+		
+		System.out.println("Status do pedido de pizza: " + processo_1.getStatus());
+
+	}
+
+}

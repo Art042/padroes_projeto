@@ -1,0 +1,22 @@
+package atividade_3.q_7;
+
+public class Main {
+    public static void main(String[] args) {
+        // Criar os jogadores
+        BingoPlayer player1 = new BingoPlayer("João",50);
+        BingoPlayer player2 = new BingoPlayer("Maria",50);
+        BingoPlayer player3 = new BingoPlayer("Pedro", 50);
+        
+        // Criar o jogo
+        BingoGame game = new BingoGame();
+        
+        // Adicionar os jogadores ao jogo
+        game.addPlayer(player1);
+        game.addPlayer(player2);
+        game.addPlayer(player3);
+        
+        // Começar o jogo
+        game.start();
+    }
+}
+

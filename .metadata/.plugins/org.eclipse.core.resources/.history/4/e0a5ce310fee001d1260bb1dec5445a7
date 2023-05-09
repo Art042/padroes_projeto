@@ -1,0 +1,33 @@
+package atividade_3.q_3;
+
+import atividade_3.q_3.states.Processando;
+import atividade_3.q_3.states.Status;
+
+public class Pedido {
+
+    private Status status;
+
+    public Pedido() {
+        this.status = new Processando(this);
+    }
+
+    public void changeStatus(Status status){
+        this.status = status;
+    }
+
+    public String getStatus() {
+        return this.status.getStatus();
+    }
+
+    public void enviar(){
+        this.status.enviar();
+    }
+
+    public void editar(){
+        this.status.alterar();
+    }
+
+    public void cancelar(){
+        this.status.cancelar();
+    }
+}

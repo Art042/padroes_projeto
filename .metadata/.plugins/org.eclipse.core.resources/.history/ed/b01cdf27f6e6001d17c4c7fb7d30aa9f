@@ -1,0 +1,8 @@
+public class Director {
+    public void construct(Builder builder, String nome, String endereco, String telefone, String email) {
+        builder.setNome(nome);
+        builder.setEndereco(endereco);
+        builder.setTelefone(telefone);
+        builder.setEmail(email);
+    }
+}

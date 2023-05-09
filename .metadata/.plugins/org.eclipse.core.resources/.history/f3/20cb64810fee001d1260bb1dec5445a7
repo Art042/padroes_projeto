@@ -1,0 +1,18 @@
+package atividade_3.q_3.states;
+
+import atividade_3.q_3.Processo;
+
+public abstract class Status {
+
+    Processo pedido;
+
+    Status(Processo pedido){
+        this.pedido = pedido;
+    }
+
+    public abstract String getStatus();
+    public abstract void alterar();
+    public abstract void cancelar();
+    public abstract void enviar();
+
+}

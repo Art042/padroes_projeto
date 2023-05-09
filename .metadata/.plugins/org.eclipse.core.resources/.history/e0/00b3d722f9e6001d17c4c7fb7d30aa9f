@@ -1,0 +1,27 @@
+package atividade_3.q_1;
+
+public abstract class Builder {
+    protected Contato contato;
+    
+    public void setNome(String nome) {
+        contato.setNome(nome);
+    }
+    
+    public void setEndereco(String endereco) {
+        contato.setEndereco(endereco);
+    }
+    
+    public void setTelefone(String telefone) {
+        contato.setTelefone(telefone);
+    }
+    
+    public void setEmail(String email) {
+        contato.setEmail(email);
+    }
+    
+    public Contato getContato() {
+        return contato;
+    }
+    
+    public void buildContato() {}
+}

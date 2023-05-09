@@ -1,0 +1,11 @@
+package atividade_3.q_10.model.decorators;
+
+abstract class DrinkDecorator implements Drink {
+
+	protected Drink drink;
+
+
+	public DrinkDecorator(Drink drink) {
+		this.drink = drink;
+	}
+}

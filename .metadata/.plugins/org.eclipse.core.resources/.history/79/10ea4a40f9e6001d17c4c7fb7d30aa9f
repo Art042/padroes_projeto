@@ -1,0 +1,12 @@
+package atividade_3.q_1;
+
+public class ContatoInternetBuilder extends Builder {
+    public ContatoInternetBuilder() {
+        contato = new ContatoInternet();
+    }
+    
+    public void buildContato() {
+        contato.setNome(contato.getNome());
+        contato.setEmail(contato.getEmail());
+    }
+}

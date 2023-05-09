@@ -1,0 +1,22 @@
+package atividade_3.q_10.model.decorators;
+
+import atividade_3.q_10.model.Drink;
+
+public class Bacon extends DrinkDecorator {
+	
+	public Bacon(Drink drink) {
+		super(drink);
+	}
+
+	@Override
+	public void serve() {
+		drink.serve();
+		System.out.println("- Adicionando Bacon");
+	}
+
+	@Override
+	public Double getPrice() {
+		return drink.getPrice() + 0.8d;
+	}
+
+}

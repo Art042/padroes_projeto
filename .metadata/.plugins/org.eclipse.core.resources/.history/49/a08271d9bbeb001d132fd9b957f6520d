@@ -1,0 +1,50 @@
+package atividade_3.q_7;
+
+import java.util.*;
+
+public class BingoCard {
+    private List<Observer> observers;
+    private List<Integer> numbers;
+    private Map<String, List<Integer>> cards;
+
+    public BingoCard() {
+        observers = new ArrayList<>();
+        numbers = new ArrayList<>();
+        cards = new HashMap<>();
+        for (int i = 1; i <= 75; i++) {
+            numbers.add(i);
+        }
+        Collections.shuffle(numbers);
+    }
+
+    public void attach(Observer observer) {
+        observers.add(observer);
+    }
+
+    public void detach(Observer observer) {
+        observers.remove(observer);
+    }
+
+    public void distribute(String name, List<Integer> card) {
+        cards.put(name, card);
+    }
+
+    public void start() {
+        for (int number : numbers) {
+            System.out.println("Sorteando número: " + number);
+            notifyObservers(number);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private void notifyObservers(int number) {
+        for (Observer observer : observers) {
+            observer.update(number);
+        }
+    }
+}
+

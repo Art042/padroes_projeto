@@ -1,0 +1,59 @@
+package atividade_3.q_7;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class BingoCard {
+    private int[][] card;
+    private int[] colCounts;
+    
+    public BingoCard(int numCols) {
+        card = new int[5][numCols];
+        colCounts = new int[numCols];
+        for (int i = 0; i < numCols; i++) {
+            List<Integer> numbers = new ArrayList<>();
+            for (int j = 1; j <= 15; j++) {
+                numbers.add(j + (i * 15));
+            }
+            Collections.shuffle(numbers);
+            for (int j = 0; j < 5; j++) {
+                card[j][i] = numbers.remove(0);
+            }
+        }
+    }
+    
+    public void markNumber(int number) {
+        for (int i = 0; i < card.length; i++) {
+            for (int j = 0; j < card[i].length; j++) {
+                if (card[i][j] == number) {
+                    card[i][j] = 0;
+                    colCounts[j]++;
+                }
+            }
+        }
+    }
+    
+    public boolean isComplete() {
+        for (int count : colCounts) {
+            if (count == 5) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    public void print() {
+        System.out.println("B   I   N   G   O");
+        for (int i = 0; i < card.length; i++) {
+            for (int j = 0; j < card[i].length; j++) {
+                if (card[i][j] == 0) {
+                    System.out.print("    ");
+                } else {
+                    System.out.printf("%-3d ", card[i][j]);
+                }
+            }
+            System.out.println();
+        }
+    }
+}

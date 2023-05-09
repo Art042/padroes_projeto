@@ -1,8 +1,0 @@
-package atividade_2.q_4;
-
-public class Produtos_Fisicos implements Descontos {
-	//30% Desconto
-	public double getDescontos() {
-		return 0.3;
-	}
-}
