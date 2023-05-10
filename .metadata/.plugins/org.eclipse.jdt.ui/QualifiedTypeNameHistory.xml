@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="atividade_2.q_6.Formato"/>
     <fullyQualifiedTypeName name="atividade_2.q_6.Conta"/>
     <fullyQualifiedTypeName name="atividade_2.q_6.Requisicao"/>
@@ -8,7 +7,17 @@
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="javax.security.auth.Subject"/>
+    <fullyQualifiedTypeName name="atividade_3.q_10.model.Drink"/>
+    <fullyQualifiedTypeName name="atividade_3.q_10.model.Expresso"/>
+    <fullyQualifiedTypeName name="atividade_3.q_10.model.Tea"/>
+    <fullyQualifiedTypeName name="atividade_3.q_3.Pedido"/>
+    <fullyQualifiedTypeName name="atividade_3.q_3.states.Status"/>
+    <fullyQualifiedTypeName name="atividade_3.q_3.states.Processando"/>
+    <fullyQualifiedTypeName name="java.text.DecimalFormatSymbols"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+    <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

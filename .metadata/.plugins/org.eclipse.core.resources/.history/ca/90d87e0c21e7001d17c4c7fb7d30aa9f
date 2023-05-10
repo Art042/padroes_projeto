@@ -1,9 +1,0 @@
-package atividade_3.q_5;
-
-import java.text.SimpleDateFormat;
-
-class USADateFormat implements DateFormat {
-    public String format(Date date) {
-        return new SimpleDateFormat("MM/dd/yyyy").format(date);
-    }
-}

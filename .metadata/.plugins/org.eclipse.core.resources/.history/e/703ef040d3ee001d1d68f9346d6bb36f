@@ -1,0 +1,15 @@
+package atividade_3.q_5.Moeda;
+
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
+
+public class EUAMoeda implements FormatoMoeda {
+    public String format(double value) {
+    	DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.getDefault());
+    	symbols.setDecimalSeparator('.');
+    	symbols.setGroupingSeparator(',');
+        DecimalFormat df = new DecimalFormat("#,##0.00", symbols);
+        return String.format("$ %.2f", value);
+    }
+}

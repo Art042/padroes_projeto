@@ -2,9 +2,13 @@ package atividade_3.q_5;
 
 import java.util.Date;
 
+import atividade_3.q_5.Factory.AbstractFactory;
+import atividade_3.q_5.Factory.FormatoPais;
+import atividade_3.q_5.Moeda.FormatoMoeda;
+
 public class main {
     public static void main(String[] args) {
-        String localeCode = "US"; // código de localidade informado pelo usuário
+        String localeCode = "US"; 
         AbstractFactory factory = FormatoPais.getFactory(localeCode);
         java.text.DateFormat dateFormat = factory.createDateFormat();
         FormatoMoeda currencyFormat = factory.createCurrencyFormat();

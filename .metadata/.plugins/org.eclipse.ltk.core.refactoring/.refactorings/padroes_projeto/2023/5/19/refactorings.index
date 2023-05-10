@@ -25,3 +25,23 @@
 1683602539387	Rename type 'LocaleFactory'
 1683603805041	Delete elements
 1683604832055	Delete element
+1683674315806	Delete element
+1683678464277	Move compilation units
+1683678534266	Rename type 'SanduicheBasico'
+1683678577870	Rename type 'SanduicheCarne'
+1683678597631	Rename type 'SanduicheFrango'
+1683678604667	Delete element
+1683678658617	Rename type 'FabricaSanduiches'
+1683679807042	Move compilation unit
+1683680430642	Move compilation unit
+1683680847116	Delete element
+1683681567867	Move compilation units
+1683681814452	Move compilation units
+1683681886086	Move compilation units
+1683681948793	Move compilation unit
+1683685340669	Delete elements
+1683685538905	Rename type 'BingoSystem'
+1683685622708	Rename type 'Bingo'
+1683685640670	Rename type 'Cartela'
+1683686474663	Rename type 'BingoSystem'
+1683686780191	Rename type 'Bingo'

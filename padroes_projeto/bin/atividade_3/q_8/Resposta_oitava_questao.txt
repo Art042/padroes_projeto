@@ -1,0 +1,4 @@
+Resposta  Questão 8
+
+A principal vantagem desse código é a adição de comportamentos de forma dinâmica, sem a necessidade de Criar várias subclasses.
+Assim, podendo adicionar ou remover características sem a necessidade de alterar outros objetos.

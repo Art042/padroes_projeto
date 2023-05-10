@@ -1,0 +1,15 @@
+package atividade_3.q_4.Factory;
+
+public class Carregando {
+
+	public static void barra_carregando(String icone,int repeticoes, long delayMillis) {
+	    for(int i = 0; i < repeticoes; i++) {
+	        System.out.print(icone.charAt(i));
+	        try {
+	            Thread.sleep(delayMillis);
+	        } catch (InterruptedException e) {
+	            e.printStackTrace();
+	        }
+	    }
+	}
+}

@@ -1,0 +1,7 @@
+Resposta  Questão
+
+Uma das Principais Vantagens do Código é o Baixo Acoplamento, pois uma classe não necessita obrigatoriamente da outra para funcionar. Assim a Classe corretora não está acoplada a classe ação, por exemplo.
+
+Além disso, o código apresenta uma flexibilidade alta, o que permite o reaproveitamento das classes em diferentes aplicações do código.
+
+Outra vantagem é a Escalabilidade, assim se vários Objetos precisarem ser notificados simultaneamente, o código desempenhará bem a função.
