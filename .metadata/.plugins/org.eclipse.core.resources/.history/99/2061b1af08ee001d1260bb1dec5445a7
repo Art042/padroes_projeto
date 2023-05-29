@@ -1,6 +1,0 @@
-package atividade_3.q_10.model;
-
-public interface Drink {
-	void serve();
-	Double getPrice();
-}

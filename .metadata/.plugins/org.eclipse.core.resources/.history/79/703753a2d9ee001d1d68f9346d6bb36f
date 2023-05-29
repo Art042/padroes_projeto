@@ -1,5 +1,0 @@
-package atividade_3.q_7;
-
-interface Observer {
-    void update(int number);
-}
