@@ -10,32 +10,32 @@ public class Experimento implements MedidorCelsiusIF, Cloneable {
     private AdaptadorFarenheitParaCelsiusClassAdapter adaptadorClass;
     private AdaptadorFarenheitParaCelsiusObjectAdapter adaptadorObject;
 
+    // Construtor
     public Experimento(MedidorCelsiusIF medidor, AdaptadorFarenheitParaCelsiusClassAdapter adaptadorClass, AdaptadorFarenheitParaCelsiusObjectAdapter adaptadorObject) {
         this.medidor = medidor;
         this.adaptadorClass = adaptadorClass;
         this.adaptadorObject = adaptadorObject;
     }
 
+    // Método clone()
     @Override
     public Experimento clone() {
         try {
             Experimento experimentoClone = (Experimento) super.clone();
-//            experimentoClone.medidor = (MedidorCelsiusIF) ((Object) medidor).clone();
+            experimentoClone.medidor = (MedidorCelsiusIF) medidor.clone();
             experimentoClone.adaptadorClass = (AdaptadorFarenheitParaCelsiusClassAdapter) adaptadorClass.clone();
             experimentoClone.adaptadorObject = (AdaptadorFarenheitParaCelsiusObjectAdapter) adaptadorObject.clone();
             return experimentoClone;
         } catch (CloneNotSupportedException e) {
+            // Lidar com exceção de clonagem, se necessário
             return null;
         }
     }
+
+    // Outros métodos do experimento...
 
     public void realizarExperimento() {
         double temperaturaCelsius = medidor.medirTemperatura();
         System.out.println("Temperatura em Celsius: " + temperaturaCelsius);
     }
-
-	@Override
-	public double medirTemperatura() {
-		return 0;
-	}
 }

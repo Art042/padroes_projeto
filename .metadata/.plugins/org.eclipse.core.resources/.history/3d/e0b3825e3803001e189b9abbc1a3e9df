@@ -3,7 +3,7 @@ package atividade_4.q_2.Adapter;
 import atividade_4.q_2.MedidorCelsiusIF;
 import atividade_4.q_2.MedidorFarenheit;
 
-public class AdaptadorFarenheitParaCelsiusClassAdapter extends MedidorFarenheit implements MedidorCelsiusIF, Cloneable {
+public class AdaptadorFarenheitParaCelsiusClassAdapter extends MedidorFarenheit implements MedidorCelsiusIF {
     public double medirTemperatura() {
         double temperaturaFarenheit = getTemperaturaFarenheit();
         double temperaturaCelsius = converterFarenheitParaCelsius(temperaturaFarenheit);
@@ -13,11 +13,6 @@ public class AdaptadorFarenheitParaCelsiusClassAdapter extends MedidorFarenheit 
     private double converterFarenheitParaCelsius(double temperaturaFarenheit) {
         return (temperaturaFarenheit-32)*5/9;
      // Por algum motivo se fosse (temperaturaFarenheit-32.0)*1.8 não retornava o valor correto;
-    }
-    
-    @Override
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
     }
     
     

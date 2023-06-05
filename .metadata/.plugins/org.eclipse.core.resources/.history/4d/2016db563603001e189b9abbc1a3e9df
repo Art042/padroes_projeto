@@ -1,0 +1,9 @@
+Ambos os adaptadores, AdaptadorFarenheitParaCelsiusObjectAdapter e AdaptadorFarenheitParaCelsiusClassAdapter, respeitam o princípio "aberto/fechado" porque eles permitem a extensão do comportamento sem modificar o código existente.
+
+O princípio "aberto/fechado" é um princípio importante no design de software que enfatiza a extensibilidade e a capacidade de adicionar novos recursos sem modificar o código existente. De acordo com esse princípio, uma classe deve estar aberta para extensão (ou seja, permitir que novos comportamentos sejam adicionados) e fechada para modificação (ou seja, evitar que o código existente seja alterado).
+
+No caso dos adaptadores, ambos implementam a interface MedidorCelsiusIF, que define um contrato comum para medir temperaturas em Celsius. No entanto, eles adaptam fontes diferentes de temperatura em Celsius: AdaptadorFarenheitParaCelsiusObjectAdapter adapta a classe MedidorFarenheit, enquanto AdaptadorFarenheitParaCelsiusClassAdapter adapta a própria classe MedidorCelsius.
+
+Se, no futuro, você precisar adicionar outro adaptador para uma nova fonte de temperatura em Celsius, poderá criar uma nova classe que implementa a interface MedidorCelsiusIF sem modificar o código existente dos adaptadores existentes. Isso significa que você pode estender o comportamento sem ter que alterar ou modificar o código dos adaptadores existentes, seguindo assim o princípio "aberto/fechado".
+
+Essa abordagem de design facilita a manutenção do código, permite a introdução de novos adaptadores de forma independente e promove a reutilização de código existente. Além disso, garante que as alterações em um adaptador não afetem o funcionamento dos outros adaptadores ou partes do sistema que dependam dos adaptadores existentes.
