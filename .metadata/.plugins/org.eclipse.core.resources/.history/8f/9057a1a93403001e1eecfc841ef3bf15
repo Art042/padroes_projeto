@@ -1,0 +1,19 @@
+package atividade_4.q_2.Adapter;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class AdaptadorFarenheitParaCelsiusClassAdapterTest {
+
+	@Test
+	void testMedirTemperatura() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetTemperaturaFarenheit() {
+		fail("Not yet implemented");
+	}
+
+}

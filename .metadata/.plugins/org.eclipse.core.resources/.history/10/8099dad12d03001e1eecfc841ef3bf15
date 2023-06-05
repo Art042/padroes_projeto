@@ -1,0 +1,17 @@
+package atividade_4.q_2;
+
+import atividade_4.q_2.Adapter.AdaptadorFarenheitParaCelsiusObjectAdapter;
+
+public class Main {
+
+    public static void main(String[] args) {
+        MedidorFarenheit medidorFarenheit = new MedidorFarenheit();
+        AdaptadorFarenheitParaCelsiusObjectAdapter adaptador = new AdaptadorFarenheitParaCelsiusObjectAdapter(medidorFarenheit);
+
+        double temperaturaCelsius = adaptador.medirTemperatura();
+        double temperaturaFarenheit = medidorFarenheit.getTemperaturaFarenheit();
+        System.out.println("Temperatura: " + temperaturaCelsius+" Graus Celsius.");
+        System.out.println("Temperatura: " + temperaturaCelsius+" Farenheit.");
+    }
+
+}

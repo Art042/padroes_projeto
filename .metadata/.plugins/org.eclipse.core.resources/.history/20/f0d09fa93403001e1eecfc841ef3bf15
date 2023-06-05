@@ -1,0 +1,14 @@
+package atividade_4.q_2;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class MedidorCelsiusTest2 {
+
+	@Test
+	void testMedirTemperatura() {
+		fail("Not yet implemented");
+	}
+
+}

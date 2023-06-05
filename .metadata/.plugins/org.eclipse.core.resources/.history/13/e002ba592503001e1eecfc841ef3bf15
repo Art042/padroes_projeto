@@ -1,0 +1,92 @@
+package atividade_4.q_1;
+
+public class Client {
+
+}
+import java.util.ArrayList;
+import java.util.List;
+
+// Interface que define a operação de soma
+interface Soma {
+    int somar();
+}
+
+// Classe que soma em vetor
+class Classe1 {
+    private int[] vetor;
+
+    public Classe1(int[] vetor) {
+        this.vetor = vetor;
+    }
+
+    public int[] getVetor() {
+        return vetor;
+    }
+
+    public void setVetor(int[] vetor) {
+        this.vetor = vetor;
+    }
+
+    public int somarVetor() {
+        int soma = 0;
+        for (int i : vetor) {
+            soma += i;
+        }
+        return soma;
+    }
+}
+
+// Classe Adapter que adapta a soma de Classe1 para Classe2
+class Classe1Adapter implements Soma {
+    private Classe1 classe1;
+
+    public Classe1Adapter(Classe1 classe1) {
+        this.classe1 = classe1;
+    }
+
+    public int somar() {
+        int[] vetor = classe1.getVetor();
+        List<Integer> lista = new ArrayList<>();
+        for (int i : vetor) {
+            lista.add(i);
+        }
+        Classe2 classe2 = new Classe2(lista);
+        return classe2.somarLista();
+    }
+}
+
+// Classe que soma em lista
+class Classe2 {
+    private List<Integer> lista;
+
+    public Classe2(List<Integer> lista) {
+        this.lista = lista;
+    }
+
+    public List<Integer> getLista() {
+        return lista;
+    }
+
+    public void setLista(List<Integer> lista) {
+        this.lista = lista;
+    }
+
+    public int somarLista() {
+        int soma = 0;
+        for (int i : lista) {
+            soma += i;
+        }
+        return soma;
+    }
+}
+
+// Exemplo de uso
+public class AdapterExample {
+    public static void main(String[] args) {
+        int[] vetor = {1, 2, 3, 4, 5};
+        Classe1 classe1 = new Classe1(vetor);
+        Classe1Adapter adapter = new Classe1Adapter(classe1);
+        int resultado = adapter.somar();
+        System.out.println("Resultado: " + resultado);
+    }
+}
