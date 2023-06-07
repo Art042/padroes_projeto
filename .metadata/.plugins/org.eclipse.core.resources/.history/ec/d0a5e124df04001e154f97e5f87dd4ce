@@ -13,7 +13,7 @@ public class Main {
     	if (endereco.length() == 0) {
             System.out.println(MensagensErro.DIRETORIO_NAO_FORNECIDO.getMessage());
     	}try {
-            Elemento elemento = ElementoFactory.criarElemento(endereco);
+            Elemento elemento = FileSystem.criarElemento(endereco);
             long tamanho = elemento.tamanho();
             System.out.println("Tamanho total: " + tamanho + " bytes");
         } catch (IOException e) {
