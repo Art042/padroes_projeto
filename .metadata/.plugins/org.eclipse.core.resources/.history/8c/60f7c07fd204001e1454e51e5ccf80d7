@@ -1,0 +1,12 @@
+package atividade_4.q_6.Bridge.SGBD_Classes;
+
+import atividade_4.q_6.Persistencia;
+
+public class PersistenciaXML implements Persistencia {
+    @Override
+    public void enviarArquivo(String arquivo) {
+        System.out.println("Enviando arquivo XML para o banco de dados X: " + arquivo);
+        // Lógica de envio de arquivo XML para o banco de dados X
+    }
+}
+

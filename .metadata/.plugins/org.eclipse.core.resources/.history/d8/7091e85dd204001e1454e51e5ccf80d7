@@ -1,0 +1,10 @@
+package atividade_4.q_6.Bridge.SGBD_Classes;
+
+import atividade_4.q_6.Persistencia;
+
+public class PersistenciaJson implements Persistencia {
+    @Override
+    public void salvar() {
+        System.out.println("Salvando arquivo JSON em Base de Dados...");
+    }
+}

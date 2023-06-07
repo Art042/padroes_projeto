@@ -1,0 +1,21 @@
+package atividade_4.q_3.command;
+
+import java.util.Random;
+
+import atividade_4.q_3.RoboAction;
+
+public class CalcularCommand implements RoboAction {
+	Random random = new Random();
+	
+	int numero_sorte = random.nextInt(101);
+    @Override
+    public void execute() {
+        System.out.println("Calculado . . .");
+	    if(numero_sorte != 42) {
+	    	System.out.println("A resposta é "+numero_sorte);
+	    }else {
+	    	System.out.println("Você deve buscar a Resposta para vida, o Universo e tudo mais!");
+	    }
+    }
+
+}

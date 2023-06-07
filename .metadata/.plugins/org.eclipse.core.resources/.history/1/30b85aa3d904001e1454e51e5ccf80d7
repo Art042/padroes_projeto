@@ -1,0 +1,19 @@
+package atividade_4.q_4;
+
+import java.io.File;
+
+import atividade_4.q_4.Composite.Elemento;
+
+public class ElementoFactory {
+    public static Elemento criarElemento(String nome) throws IOException {
+        File file = new File(nome);
+
+        if (file.isFile()) {
+            return new Arquivo(nome);
+        } else if (file.isDirectory()) {
+            return new Diretorio(nome);
+        }
+
+        throw new IOException(ErrorMessages.ARQUIVO_DIRETORIO_NAO_ENCONTRADO);
+    }
+}

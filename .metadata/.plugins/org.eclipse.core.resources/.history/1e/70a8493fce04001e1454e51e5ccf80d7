@@ -1,0 +1,27 @@
+package atividade_4.q_5;
+
+import atividade_4.q_5.Composite.Celula;
+import atividade_4.q_5.Composite.Linha;
+import atividade_4.q_5.Composite.Tabela;
+
+public class Main {
+    public static void main(String[] args) {
+        Tabela tabela = new Tabela();
+
+        Linha linha1 = new Linha();
+        linha1.adicionar(new Celula("1A"));
+        linha1.adicionar(new Celula("1B"));
+        linha1.adicionar(new Celula("1C"));
+
+        Linha linha2 = new Linha();
+        linha2.adicionar(new Celula("2A"));
+        linha2.adicionar(new Celula("2B"));
+        linha2.adicionar(new Celula("2C"));
+
+        tabela.adicionar(linha1);
+        tabela.adicionar(linha2);
+
+        // Imprimindo a tabela
+        tabela.imprimir();
+    }
+}

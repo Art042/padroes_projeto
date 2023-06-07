@@ -1,0 +1,13 @@
+package atividade_4.q_6.Bridge;
+
+public class Pessoa extends ClasseNegocio {
+    public Pessoa(Persistencia persistencia) {
+        super(persistencia);
+    }
+
+    @Override
+    public void persiste() {
+        System.out.println("Persistindo Pessoa...");
+        persistencia.enviarArquivo("arquivo_pessoa");
+    }
+}

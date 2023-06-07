@@ -21,7 +21,6 @@ public class AdaptadorFarenheitParaCelsiusObjectAdapter implements MedidorCelsiu
         // Por algum motivo se fosse (temperaturaFarenheit-32.0)*1.8 não retornava o valor correto;
     }
     
-    @Override
     public Object clone() throws CloneNotSupportedException {
         return super.clone();
     }

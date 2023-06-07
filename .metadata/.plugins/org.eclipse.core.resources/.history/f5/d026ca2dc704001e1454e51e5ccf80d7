@@ -1,0 +1,8 @@
+package atividade_4.q_3.command;
+
+public class MedirTemperaturaCommand implements RoboAction {
+    @Override
+    public void execute() {
+        System.out.println("Medindo temperatura");
+    }
+}

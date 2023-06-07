@@ -1,0 +1,6 @@
+package atividade_4.q_6;
+
+interface Persistencia {
+    void salvar();
+}
+

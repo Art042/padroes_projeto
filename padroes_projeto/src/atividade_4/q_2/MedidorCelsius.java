@@ -9,7 +9,6 @@ public class MedidorCelsius implements MedidorCelsiusIF, Cloneable {
     }
     
 
-    @Override
     public Object clone() throws CloneNotSupportedException {
         throw new CloneNotSupportedException();
     }

@@ -1,0 +1,10 @@
+package atividade_4.q_3.command;
+
+import atividade_4.q_3.RoboAction;
+
+public class CalcularCommand implements RoboAction {
+    @Override
+    public void execute() {
+        System.out.println("Calculado . . .");
+    }
+}

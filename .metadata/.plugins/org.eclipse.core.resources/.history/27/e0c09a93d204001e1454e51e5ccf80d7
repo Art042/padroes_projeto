@@ -1,0 +1,25 @@
+package atividade_4.q_6;
+
+public class Main {
+    public static void main(String[] args) {
+        // Persistência em XML
+        Persistencia persistenciaXML = new PersistenciaXML();
+
+        ClasseNegocio pessoaXML = new Pessoa(persistenciaXML);
+        pessoaXML.persiste();
+
+        ClasseNegocio carroXML = new Carro(persistenciaXML);
+        carroXML.persiste();
+
+        System.out.println("-----------------------");
+
+        // Persistência em JSON
+        Persistencia persistenciaJson = new PersistenciaJson();
+
+        ClasseNegocio pessoaJson = new Pessoa(persistenciaJson);
+        pessoaJson.persiste();
+
+        ClasseNegocio carroJson = new Carro(persistenciaJson);
+        carroJson.persiste();
+    }
+}

@@ -13,9 +13,10 @@ public class Main {
         MedidorCelsiusIF adaptador2 = new AdaptadorFarenheitParaCelsiusClassAdapter();
         
         double temperaturaCelsius = adaptador.medirTemperatura();
+        double temperaturaCelsius2 = adaptador2.medirTemperatura();
         double temperaturaFarenheit = medidorFarenheit.getTemperaturaFarenheit();
         System.out.println("Temperatura: " + temperaturaCelsius+" Graus Celsius. - Versão Object");
-        System.out.println("Temperatura: " + temperaturaCelsius+" Graus Celsius. - Versão ClassAdapter");
+        System.out.println("Temperatura: " + temperaturaCelsius2+" Graus Celsius. - Versão ClassAdapter");
         System.out.println("Temperatura: " + temperaturaFarenheit+" Graus Farenheit.");
     }
 

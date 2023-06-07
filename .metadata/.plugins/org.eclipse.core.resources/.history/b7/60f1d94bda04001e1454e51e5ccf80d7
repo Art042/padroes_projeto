@@ -1,0 +1,25 @@
+package atividade_4.q_4;
+
+import java.io.IOException;
+
+import atividade_4.q_4.Composite.Elemento;
+import atividade_4.q_4.Composite.Enums.MensagensErro;
+
+public class Main {
+    public static void main(String[] args) {
+        if (args.length == 0) {
+            System.out.println(MensagensErro.DIRETORIO_NAO_FORNECIDO.getMessage());
+            return;
+        }
+
+        String nome = args[0];
+
+        try {
+            Elemento elemento = ElementoFactory.criarElemento(nome);
+            long tamanho = elemento.tamanho();
+            System.out.println("Tamanho total: " + tamanho + " bytes");
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
