@@ -21,6 +21,8 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="D:\Artur\Artur\Trabalhos\IFMA\8º Período\Padrões de projeto\Atv_4_artur_costa_tourinho.zip"/>
+			<item value="D:\Artur\Artur\Trabalhos\IFMA\8º Período\Padrões de projeto\Atv_4.zip"/>
 			<item value="D:\Artur\Artur\Trabalhos\IFMA\8º Período\Padrões de projeto\atividade3_artur_costa_tourinho.zip"/>
 			<item value="D:\Artur\Artur\Trabalhos\IFMA\8º Período\Padrões de projeto\Atv_2\Atv_2_q2456_Artur_Costa_Tourinho.zip"/>
 		</list>

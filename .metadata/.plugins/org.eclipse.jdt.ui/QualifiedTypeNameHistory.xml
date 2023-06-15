@@ -34,8 +34,6 @@
     <fullyQualifiedTypeName name="atividade_4.q_5.Composite.Celula"/>
     <fullyQualifiedTypeName name="atividade_4.q_5.Composite.Linha"/>
     <fullyQualifiedTypeName name="atividade_4.q_5.Componente"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="atividade_4.q_5.Composite.Tabela"/>
     <fullyQualifiedTypeName name="atividade_4.q_6.ClasseNegocio"/>
     <fullyQualifiedTypeName name="atividade_4.q_6.Persistencia"/>
@@ -49,4 +47,6 @@
     <fullyQualifiedTypeName name="atividade_4.q_4.Composite.Enums.MensagensErro"/>
     <fullyQualifiedTypeName name="atividade_4.q_4.Composite.Elemento"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
